@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+}
+header{
+    width: 20%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    z-index: 5;
+}
+header h1{
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0;
+}
+/**
+ * Configurações do Link na lista
+ * Muda o display para block para ocultar 100%
+ * Uma bordar de 1px do estilo sólido
+ * Remove a borda da esquerda e da direita
+ * Dá uma margin de 3px do topo e da base
+ * Dá um padding de 5px do topo e da base
+ * Remove o underline
+**/
+
+nav a{
+    
+    display: block;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    margin-top: 3px 0;
+    padding: 5px 0;
+    text-decoration:  none;
+}
+
+ .box{
+    position: absolute;
+    top: 5%;
+     right: 10px;
+     width: 70%;
+     height: 70%;
+     background-color: aqua;
+ }
+ .box h2{
+     font-size: 20px;
+     padding: 10px;
+ }
+ .box p{
+    font-size: 12px;
+    padding: 10px;
+ }
+
+ /**
+ * Aqui definimos a classe .content, que vamos definir a animação
+ * Definimos o largura minima de 100%
+ * Altura de 98%
+ * Posição será absoluta;
+ * Definimos que margin-left será - 101%
+ * Definimos
+ * Definimos transition (propriedade, tempo, e tipo de transição)
+ **/
+
+ .content{
+     min-width: 100%;
+     height: 98%;
+     position: absolute;
+     margin-left: 101%;
+     -webkit-transition: margin-left .8s ease-in-out;
+     -moz-transition: margin-left .8s ease-in-out;
+     -o-transition: margin-left .8s ease-in-out;
+     transition: margin-left .8s ease-in-out;
+ }
+
+.content:target{
+    margin-left: 0px;
+}
+#home{
+    margin-left: 0px;
+}
+
+#home:target ~ header #link-home a,
+#company:target ~ header #link-company a,
+#service:target ~ header #link-service a,
+#contact:target ~ header #link-contact a{
+    background: #333;
+    color: #fff;
+}
