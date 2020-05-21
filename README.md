@@ -7,5 +7,5 @@ Estudo e gambiarras web
          <li>SEMPRE COLOCAR A DATA E HORARIO QUE APRENDEU</li>
          <li>TENTAR CRIAR UMA PAGINA UTILIZANDO OQUE APRENDEU COMO PRINCIPAL ATRIBUTO</li>
          <li>NÃO DEIXAR UMA AULA NA METADE JAMAIS</li>
-         <li>COMEÇE COM O SIMPLES</li>
+         <li>COMECE COM O SIMPLES</li>
      </ul></H1></CENTER>
